@@ -9,17 +9,8 @@
 	<body>
 		<div class="location-container">
 			<form class="location-form">
-				<!-- <h5 class="location-title">Me localiser</h5>
-				<div class="location-field">
-					<label class="location-label" for="email">Email</label>
-					<input class="location-input" name="email" id="email" type="email"/>
-				</div>
-				<div class="location-field">
-					<label class="location-label" for="password">Password</label>
-					<input class="location-input" name="password" id="password" type="password"/>
-				</div> -->
 				<div id="location">
-					<h5 class="location-results-title">Vos coordonnées</h5>
+					<h4 class="location-title">Vos coordonnées</h4>
 					<div id="results">
 						<div class="location-field-results">
 							<label class="location-label-results" for="longitude">Longitude</label>
@@ -69,6 +60,7 @@
 			</form>
 
 		</div>
+
 		<script>
       const resizeOps = () => {
         document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");

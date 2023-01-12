@@ -27,7 +27,7 @@ body {
 
 .location-container {
   height: 90%;
-  width: 50%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -38,52 +38,11 @@ body {
 .location-form {
   background-color: #202124;
   height: fit-content;
-  width: 30em;
+  max-width: 30em;
+  max-height: 100%;
   margin: auto;
   border-radius: 10px;
   padding: 10px;
-}
-
-.location-title {
-  color: #ffffff;
-  text-align: center;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-
-.location-field {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.location-label {
-  color: #ffffff;
-  margin-bottom: 10px;
-  text-align: start;
-  width: 80%;
-}
-
-.location-input {
-    width: 80%;
-    border-radius: 5px;
-    height: 30px;
-    border: none;
-    padding: 5px;
-}
-
-#submitButton {
-  padding: 10px 15px;
-  border-radius: 10px;
-  background-color: rgb(28, 226, 160);
-  color: #ffffff;
-}
-
-#submitButton:hover {
-  cursor: pointer;
 }
 
 #location {
@@ -98,15 +57,27 @@ body {
   margin-bottom: 20px;
 }
 
-.location-results-title {
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
 #results {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.location-title {
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.location-field {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .location-field-results {
@@ -149,3 +120,13 @@ body {
     padding: 5px;
 }
 
+#submitButton {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgb(28, 226, 160);
+  color: #ffffff;
+}
+
+#submitButton:hover {
+  cursor: pointer;
+}

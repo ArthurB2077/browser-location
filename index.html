@@ -2,12 +2,81 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0"/>
 		<title>Se localiser</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="container">
-			<h1>Ma page de localisation</h1>
+		<div class="location-container">
+			<form class="location-form">
+				<!-- <h5 class="location-title">Me localiser</h5>
+				<div class="location-field">
+					<label class="location-label" for="email">Email</label>
+					<input class="location-input" name="email" id="email" type="email"/>
+				</div>
+				<div class="location-field">
+					<label class="location-label" for="password">Password</label>
+					<input class="location-input" name="password" id="password" type="password"/>
+				</div> -->
+				<div id="location">
+					<h5 class="location-results-title">Vos coordonnées</h5>
+					<div id="results">
+						<div class="location-field-results">
+							<label class="location-label-results" for="longitude">Longitude</label>
+							<input id="longitude" class="location-input-results" name="longitude" type="text"/>
+						</div>
+						<div class="location-field-results">
+							<label class="location-label-results" for="latitude">Latitude</label>
+							<input id="latitude" class="location-input-results" name="latitude" type="text"/>
+						</div>
+						<div class="location-field-results">
+							<div class="location-2-field-results">
+								<div class="location-field-results-sm">
+									<label class="location-label-results" for="housenumber">N°</label>
+									<input id="housenumber" class="location-input-results" name="housenumber" type="number"/>
+								</div>
+								<div class="location-field-results">
+									<label class="location-label-results" for="street">Rue</label>
+									<input id="street" class="location-input-results" name="street" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="location-field-results">
+							<div class="location-2-field-results">
+								<div class="location-field-results-sm">
+									<label class="location-label-results" for="zipcode">CP</label>
+									<input id="zipcode" class="location-input-results" name="zipcode" type="text"/>
+								</div>
+								<div class="location-field-results">
+									<label class="location-label-results" for="city">Ville</label>
+									<input id="city" class="location-input-results" name="city" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="location-field-results">
+							<label class="location-label-results" for="country">Pays</label>
+							<input id="country" class="location-input-results" name="country" type="text"/>
+						</div>
+						<div class="location-field-results">
+							<label class="location-label-results" for="timestamp">Heure d'envoie</label>
+							<input id="timestamp" class="location-input-results" name="timestamp" type="datetime"/>
+						</div>
+					</div>
+				</div>
+				<div class="location-field">
+					<button id="submitButton" type="button">Me localiser</button>
+				</div>
+			</form>
+
 		</div>
-		<script src="js/scripts.js"></script>
+		<script>
+      const resizeOps = () => {
+        document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+      };
+
+      resizeOps();
+      window.addEventListener("resize", resizeOps);
+    </script>
+		<script src="scripts.js"></script>
 	</body>
 </html>

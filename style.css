@@ -8,7 +8,6 @@
 html,
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -21,14 +20,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
-  margin: 0;
-  padding: 20px;
+}
+
+body {
+  margin: 5%;
+  padding-top: 3em !important;
 }
 
 .location-container {
-  height: 90%;
+  height: fit-content;
   width: 90%;
   margin: auto;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;

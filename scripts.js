@@ -6,8 +6,8 @@ const localize = async () => {
 
       console.log(position)
 
-      document.getElementById("longitude").value = `${latitude}`
-      document.getElementById("latitude").value = `${longitude}`
+      document.getElementById("longitude").value = `${Math.round(latitude)}`
+      document.getElementById("latitude").value = `${Math.round(longitude)}`
       document.getElementById("timestamp").value = `${new Date(timestamp).toLocaleString()}`
 
       const requestOptions = {
